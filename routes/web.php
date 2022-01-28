@@ -28,7 +28,6 @@ Route::post('/simpanregistrasi',[LoginController::class, 'simpanregistrasi'])-> 
 
 
 
-
 // Admin
 Route::get('/dashboard',[AdminController::class, 'index'])->name('dashboard');
 Route::post('/postlogin',[LoginController::class, 'postlogin'])->name('postlogin');
