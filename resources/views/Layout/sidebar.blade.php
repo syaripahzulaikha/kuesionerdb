@@ -33,14 +33,58 @@
                   <i class="fas fa-box nav-icon"></i>
                   <p>Data Kuesioner</p>
                 </a>
+
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route ('aspek-pekerjaan') }}" class="nav-link">
+                    <i class="fas fa-walking"></i>
+                  <p>Aspek Pekerjaan  </p>
+                </a>
+
               </li>
               <li class="nav-item">
+                <a href="{{ route ('aspek-relasi') }}" class="nav-link">
+                    <i class="fas fa-book-reader"></i>
+                  <p>Aspek Relasi Dengan Pimpinan</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route ('aspek-suasanakerja') }}" class="nav-link">
+                    <i class="fas fa-bacon"></i>
+                  <p>Aspek Suasana Kerja</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route ('aspek-sarana') }}" class="nav-link">
+                    <i class="fas fa-building"></i>
+                  <p>Aspek Sarana Dan Prasarana</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ route ('aspek-pengembangan') }}"class="nav-link">
+                    <i class="fas fa-blog"></i>
+                  <p>Aspek pengembangan dan Promosi</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href= "{{ route ('aspek-pendapatan') }}" class="nav-link">
+                    <i class="fas fa-praying-hands"></i>
+                  <p>Aspek Pendapatan dan Kesejahteraan</p>
+                </a>
+              </li>
+
+            </ul>
+
+            <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="far fa-file-alt nav-icon"></i>
+                    <i class="fas fa-users"></i>
                   <p>Data User</p>
                 </a>
               </li>
-            </ul>
           </li>
           <li class="nav-item">
             <a href="{{ route ('logout') }}" class="nav-link alert-danger" oneclick="event.preventDefault();

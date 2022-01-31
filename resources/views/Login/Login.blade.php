@@ -38,9 +38,7 @@
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
                                     <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <p class="flr">
-                                    <a href="#" class="text-link">Lupa Password?</a>
-                                </p>
+
                                 <button type="submit" class="mt-4 btn-primary btn-lg">Masuk</button>
                             </form>
                             <div class="divider"></div>

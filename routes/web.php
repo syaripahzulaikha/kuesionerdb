@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+   return view('welcome');
+ });
 
 // Loginn
 Route::get('/',[LoginController::class, 'halamanlogin'])-> name('login');
@@ -31,5 +31,13 @@ Route::post('/simpanregistrasi',[LoginController::class, 'simpanregistrasi'])-> 
 // Admin
 Route::get('/dashboard',[AdminController::class, 'index'])->name('dashboard');
 Route::post('/postlogin',[LoginController::class, 'postlogin'])->name('postlogin');
-Route::get('/data-kuesioner',[AdminController::class, 'datakuesioner'])->name('data-kuesioner');
 Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
+
+//kuesioner
+Route::get('/data-kuesioner',[AdminController::class, 'datakuesioner'])->name('data-kuesioner');
+Route::get('/aspek-pekerjaan',[AdminController::class, 'aspekpekerjaan'])->name('aspek-pekerjaan');
+Route::get('/aspek-relasi',[AdminController::class, 'aspekrelasi'])->name('aspek-relasi');
+Route::get('/aspek-suasanakerja',[AdminController::class, 'aspeksuasanakerja'])->name('aspek-suasanakerja');
+Route::get('/aspek-sarana',[AdminController::class, 'aspeksarana'])->name('aspek-sarana');
+Route::get('/aspek-pengembangan',[AdminController::class, 'aspekpengembangan'])->name('aspek-pengembangan');
+Route::get('/aspek-pendapatan',[AdminController::class, 'aspekpendapatan'])->name('aspek-pendapatan');

@@ -23,5 +23,5 @@ class UserSeeder extends Seeder
             'password' => bcrypt('admin'),
             'remember_token' => Str::random(60),
         ]);
-    }
+      }
 }
